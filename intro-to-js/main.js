@@ -16,18 +16,19 @@ givenName = "Tim";
 // What is `givenName` set to right now?
 givenName = givenName;
 // A: itself, it is assigned, not equal to (true)
-
+//CORRECTION: Tim
 
 // 4.
 // What is `greeting` set to?
 let greeting = "Hello, how are you? " + givenName;
 // A: a string: "Hello, how are you?" AND givenName. the concatenation of them both
+//CORRECTION "Hello, how are you? Tim"
 
 
 // 5.
 // What is `math` set to?
 let high = 50;
-let low  = 10;
+let low = 10;
 let math = high - low;
 // A: 50-10 (40)
 
@@ -46,7 +47,8 @@ math = high - "5";
 let born = 1984;
 let today = 2017;
 // A: 
-let age = today - born; 
+let age = today - born;
+"Tim is" + age + "years old"
 
 
 // 8.
@@ -72,8 +74,10 @@ let myNumber = 07;
 let myString = "This is my string"
 let myBoolean = true;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
-let myUndefined = undefined;
+let myUndefined = myUndefined;
 // A:
+//CORRECTION 
+let myUnderfined;
 
 
 // For questions 11 - 19: List which boolean value will be stored in each variable. (Remember: `==` does not check data type)
@@ -106,6 +110,7 @@ let b = (undefined == undefined);
 // 16.
 let c = (undefined == null);
 // A. error - false
+//CORRECTION: this will return undefined
 
 
 // 17.
@@ -129,10 +134,10 @@ let f = (NaN == NaN);
 // A:
 let thirsty = true;
 
-if (thirsty){
-console.log("I'm parched!");
-}else {
-  console.log("I've had enough to drink.");
+if (thirsty) {
+	console.log("I'm parched!");
+} else {
+	console.log("I've had enough to drink.");
 }
 
 // For questions 21 - 29 list which statement will be logged.
@@ -140,16 +145,17 @@ console.log("I'm parched!");
 // 21.
 
 
-if(x){
+if (x) {
 	console.log("True!");
 } else {
 	console.log("False!");
 }
-// A: true, x is x
+// A: I had believed this would run true, because x is a placeholder
+//CORRECTION: After running this in the console, I see it returns x is not defined. therefore undefined
 
 
 // 22.
-if(""){
+if ("") {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -161,7 +167,7 @@ if(""){
 // this expression will set x to NaN
 // let x = 1 * undefined; 
 
-if(x){
+if (x) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -170,26 +176,27 @@ if(x){
 
 
 // 24.
-if(false){
+if (false) {
 	console.log("True!");
 } else {
 	console.log("False!");
 }
-// A: true, because it is false.  wrong, true because false is IS. it satisfies the if statement
+// A: I said it returned true
+//CORRECTION: It returns false and undefined in the console.
 
 
 // 25.
-if(-5 && 5){
+if (-5 && 5) {
 	console.log("True!");
 } else {
 	console.log("False!");
 }
 // A: false, parameters undefined. if added it equals zero which is false. 
-
+//CORRECTION: returns True and undefined in the console. -5 and 5 are values that are not mathmatically added
 
 
 // 26.
-if("Hello World!"){
+if ("Hello World!") {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -198,16 +205,16 @@ if("Hello World!"){
 
 
 // 27.
-if({}){
+if ({}) {
 	console.log("True!");
 } else {
 	console.log("False!");
 }
 // A:  object inside of an if statement, an empty object, therefore false
-
+//CORRECTION: Returns true in the console. 
 
 // 28.
-if({name: "Yehuda Katz"}){
+if ({ name: "Yehuda Katz" }) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -216,7 +223,7 @@ if({name: "Yehuda Katz"}){
 
 
 // 29.
-if(new Date()){
+if (new Date()) {
 	console.log("True!");
 } else {
 	console.log("False!");
